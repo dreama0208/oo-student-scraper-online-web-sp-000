@@ -32,9 +32,9 @@ class Scraper
       else
         student_profile[:blog] = e.attr("href")
       end
-
     end
 
+    student_profile
 
   end
 
