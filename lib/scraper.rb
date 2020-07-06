@@ -29,6 +29,8 @@ class Scraper
         student_profile[:linkedin] = e.attr("href").value
       elsif e.attr("href").value.include?("github")
         student_profile[:github] = e.attr("href").value
+      else
+        student_profile[:blog] = e.attr("href").value
 
       end
 
