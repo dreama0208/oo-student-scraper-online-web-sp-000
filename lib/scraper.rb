@@ -9,7 +9,7 @@ class Scraper
     doc.css("div.student-card").collect do |student|
       {:name => student.css("h4.student-name").text,
         :location => student.css("p.student-location").text,
-        :profile_url => student.attr("href")
+        :profile_url => student.css("a").attr("href")
       }
     end
 
