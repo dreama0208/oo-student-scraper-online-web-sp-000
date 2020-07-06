@@ -27,6 +27,8 @@ class Scraper
         student_profile[:tiwtter] = e.attr("href").value
       elsif e.attr("href").value.include?("linkedin")
         student_profile[:linkedin] = e.attr("href").value
+      elsif e.attr("href").value.include?("github")
+        student_profile[:github] = e.attr("href").value
 
       end
 
