@@ -7,7 +7,7 @@ class Scraper
     html = open(index_url)
     doc = Nokogiri::HTML(html)
     doc.css("div.student-card").collect do |student|
-      {:name => studnet.css(".student-name").text,
+      {:name => student.css(".student-name").text,
         :location => student.css(".student-location").text,
         :profile_url => student.attr("href")
       }
