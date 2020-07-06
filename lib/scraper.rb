@@ -35,7 +35,6 @@ class Scraper
     end
 
     student_profile
-
   end
 
 end
